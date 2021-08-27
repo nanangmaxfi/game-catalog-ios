@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hxf-YN-qj2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Catalog-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SubsGameCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kxq-g2-EnP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kxq-g2-EnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9UW-iu-mdO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kxq-g2-EnP" secondAttribute="bottom" id="KAD-OG-M62"/>
+                            <constraint firstItem="Kxq-g2-EnP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hfY-WT-t4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kxq-g2-EnP" secondAttribute="trailing" id="yd0-oY-HDd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Catalog" id="eDq-7T-F3j">
+                        <barButtonItem key="rightBarButtonItem" title="Profile" image="person.crop.circle.fill" catalog="system" id="ICr-eF-niG">
+                            <color key="tintColor" red="1" green="0.32156862745098036" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="77C-V5-dze" kind="show" id="Zeh-gl-CBS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gameTableView" destination="Kxq-g2-EnP" id="vjb-4v-yqI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="79.6875"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="EfU-Ga-cEO">
+            <objects>
+                <viewController id="77C-V5-dze" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Uh-A2-KHX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my-foto" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-Cq-ubd">
+                                <rect key="frame" x="147" y="136" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Jbq-Tc-jSV"/>
+                                    <constraint firstAttribute="width" constant="120" id="vgy-Go-1if"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrM-Ok-cbe">
+                                <rect key="frame" x="132.5" y="280" width="149" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Nanang Makfi">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Roboto-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-o1-dRC">
+                                <rect key="frame" x="145" y="316" width="124" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Software Developer">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.32156862745098036" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFY-bT-7yz">
+                                <rect key="frame" x="138" y="341" width="138" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Yogyakarta, Indonesia">
+                                        <attributes>
+                                            <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yub-Bn-A5J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qrM-Ok-cbe" firstAttribute="centerX" secondItem="3Uh-A2-KHX" secondAttribute="centerX" id="Hmr-a9-xUo"/>
+                            <constraint firstItem="D8L-o1-dRC" firstAttribute="top" secondItem="qrM-Ok-cbe" secondAttribute="bottom" constant="8" id="KJJ-fG-VmA"/>
+                            <constraint firstItem="qrM-Ok-cbe" firstAttribute="top" secondItem="yGf-Cq-ubd" secondAttribute="bottom" constant="24" id="UI2-Jk-VJ3"/>
+                            <constraint firstItem="yGf-Cq-ubd" firstAttribute="top" secondItem="yub-Bn-A5J" secondAttribute="top" constant="48" id="hcy-1r-KJl"/>
+                            <constraint firstItem="PFY-bT-7yz" firstAttribute="top" secondItem="D8L-o1-dRC" secondAttribute="bottom" constant="8" id="mvF-e4-8Bc"/>
+                            <constraint firstItem="D8L-o1-dRC" firstAttribute="centerX" secondItem="3Uh-A2-KHX" secondAttribute="centerX" id="qXR-jA-VO6"/>
+                            <constraint firstItem="PFY-bT-7yz" firstAttribute="centerX" secondItem="3Uh-A2-KHX" secondAttribute="centerX" id="w55-6u-vIK"/>
+                            <constraint firstItem="yGf-Cq-ubd" firstAttribute="centerX" secondItem="3Uh-A2-KHX" secondAttribute="centerX" id="wwA-8s-2Wa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="dOD-qY-Ezy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ra9-7T-JI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="77"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HEQ-YK-lfI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hxf-YN-qj2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XFa-Jx-ue9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ecy-LY-tLU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qc-Xn-So3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="my-foto" width="95" height="95"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
