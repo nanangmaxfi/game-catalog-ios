@@ -28,6 +28,7 @@
 		7122F5DA26D701AE00523F87 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		7122F5DB26D701AE00523F87 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		7122F5DF26D82F3F00523F87 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		71739A2926DA925C002B65A4 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		71E2D05826D1C152009A4D7D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		71E2D05A26D1C5D6009A4D7D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		71F4FC0726CEFAD10080A861 /* SubsGameCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubsGameCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +65,7 @@
 		71F4FBFE26CEFAD10080A861 = {
 			isa = PBXGroup;
 			children = (
+				71739A2926DA925C002B65A4 /* Secrets.xcconfig */,
 				71F4FC0926CEFAD10080A861 /* SubsGameCatalog */,
 				71F4FC0826CEFAD10080A861 /* Products */,
 			);
@@ -239,6 +241,7 @@
 /* Begin XCBuildConfiguration section */
 		71F4FC1926CEFAD30080A861 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71739A2926DA925C002B65A4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -300,6 +303,7 @@
 		};
 		71F4FC1A26CEFAD30080A861 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71739A2926DA925C002B65A4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

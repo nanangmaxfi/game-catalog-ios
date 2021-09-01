@@ -27,10 +27,26 @@ struct Game: Codable{
     let releaseDate: String
     let rating: Double
     let imageGame: String
+    
+    enum CodingKeys: String, CodingKey{
+        case id
+        case nameGame = "name"
+        case releaseDate = "released"
+        case rating
+        case imageGame = "background_image"
+    }
+}
+
+struct GameDetail: Codable{
+    let id: Int
+    let nameGame: String
+    let releaseDate: String
+    let rating: Double
+    let imageGame: String
     let playtime: Int
     let reviewCount: Int
     let genres: [Genre]
-    let screenshots: [Screenshot]
+    let description: String
     
     enum CodingKeys: String, CodingKey{
         case id
@@ -41,7 +57,7 @@ struct Game: Codable{
         case playtime
         case reviewCount = "reviews_count"
         case genres
-        case screenshots = "short_screenshots"
+        case description = "description_raw"
     }
 }
 
@@ -50,7 +66,3 @@ struct Genre: Codable{
     let name: String
 }
 
-struct Screenshot: Codable {
-    let id: Int
-    let image: String
-}
